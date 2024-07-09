@@ -1,0 +1,10 @@
+<div *ngIf="userInfo">
+  <p>ID: {{ userInfo.id }}</p>
+  <p>Name: {{ userInfo.name }}</p>
+  <p>Email: {{ userInfo.email }}</p>
+  <p>Created At: {{ userInfo.created_at | date }}</p>
+  <p>Updated At: {{ userInfo.updated_at | date }}</p>
+</div>
+
+<button (click)="logout()">Logout</button>
+

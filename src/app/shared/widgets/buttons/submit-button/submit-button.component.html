@@ -1,0 +1,9 @@
+<button
+  type="submit"
+  class="btn btn-primary"
+  [disabled]="isDisabled"
+  [ngClass]="buttonClass"
+>
+  <span *ngIf="!isDisabled">{{ label }}</span>
+  <span *ngIf="isDisabled">{{ disabledLabel }}</span>
+</button>
